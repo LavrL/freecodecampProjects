@@ -30,6 +30,48 @@
       <div class="tab1">
         <input autofocus type="number" name="age" id="number" min=1 max="100" class="input-field" placeholder="Enter your age" required>
       </div>
+
+      <div class="labels">
+        <label id="label" for="age">What option best describes your role: </label> 
+      </div>
+      <div class="tab1">
+        <select id="dropdown" class="dropdown">
+          <option disabled value>Select value</option>
+          <option>Student</option>
+          <option>Full time learner</option>
+          <option>Part time learner</option>
+          <option>Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="labels">
+          <label>Will you finish FreeCodeCamp: </label> 
+      </div>
+      <div class="tab1">
+        <ul style="list-style: none">
+          <li class="radio">
+            <label>Yes<input type="radio" value="1" class="user-rating"></label>
+          </li>
+          <li class="radio">
+              <label>No<input type="radio" value="2" class="user-rating"></label>
+          </li>
+          <li class="radio">
+              <label>Do not know<input type="radio" value="3" class="user-rating"></label>
+          </li>
+        </ul>  
+      </div>
+
+      <div class="labels">
+          <label id="label" for="preferences">Things that will be improved: </label> 
+      </div>
+      <div class="tab1">
+        <ul>
+          <li class="checkbox">
+            <label><input type="checkbox" class="user-rating">Front-end projects</label>
+          </li>
+        </ul>
+      </div>
+
   </div>
 </body>
 </html>

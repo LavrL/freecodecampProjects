@@ -24,3 +24,14 @@ body {
   width: 280px;
   height: 20px;
 }
+
+.radio, .checkbox {
+  display: block;
+  position: relative;
+  left: -40px;
+}
+
+.user-rating, input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
