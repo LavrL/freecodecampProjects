@@ -7,9 +7,11 @@
 </head>
 <body>
   <h1>Survey Form</h1>
-  <div>
+  <div class="mainForm">
+
     <p>Let us know how we can improve FreeCodeCamp</p>
     <div>
+
       <div class="labels">
         <label id="label" for="name">* Name: </label> 
       </div>
@@ -35,7 +37,7 @@
         <label id="label" for="age">What option best describes your role: </label> 
       </div>
       <div class="tab1">
-        <select id="dropdown" class="dropdown">
+        <select id="dropdown" name="currentPos" class="down">
           <option disabled value>Select value</option>
           <option>Student</option>
           <option>Full time learner</option>
@@ -48,15 +50,15 @@
           <label>Will you finish FreeCodeCamp: </label> 
       </div>
       <div class="tab1">
-        <ul style="list-style: none">
+        <ul >
           <li class="radio">
-            <label>Yes<input type="radio" value="1" class="user-rating"></label>
+            <label>Yes<input name="radio-buttons" type="radio" value="1" class="user-rating"></label>
           </li>
           <li class="radio">
-              <label>No<input type="radio" value="2" class="user-rating"></label>
+              <label>No<input name="radio-buttons" type="radio" value="2" class="user-rating"></label>
           </li>
           <li class="radio">
-              <label>Do not know<input type="radio" value="3" class="user-rating"></label>
+              <label>Do not know<input name="radio-buttons" type="radio" value="3" class="user-rating"></label>
           </li>
         </ul>  
       </div>
@@ -65,13 +67,34 @@
           <label id="label" for="preferences">Things that will be improved: </label> 
       </div>
       <div class="tab1">
-        <ul>
+        <ul style="list-style:none">
           <li class="checkbox">
             <label><input type="checkbox" class="user-rating">Front-end projects</label>
+          </li>
+          <li class="checkbox">
+            <label><input type="checkbox" class="user-rating">Back-end projects</label>
+          </li>
+          <li class="checkbox">
+            <label><input type="checkbox" class="user-rating">Wiki</label>
+          </li>
+          <li class="checkbox">
+            <label><input type="checkbox" class="user-rating">Forum</label>
           </li>
         </ul>
       </div>
 
+      <div class="labels">
+        <label for="label" for="comments">Any comments</label>
+      </div>
+      <div class="tab1">
+        <textarea id="comments" style="height: 100px; resize: vertical" class="input-field" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div>
+        <button id="submit" type="submit">Submit</button>
+      </div>
+
+    </div>
   </div>
 </body>
 </html>
