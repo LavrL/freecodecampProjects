@@ -1,26 +1,25 @@
-
-#main{
+#main {
   background: white;
   text-align: center;
 }
-img{
+img {
   max-width: 100%;
   display: block;
   margin: auto;
 }
-ul{
-  max-width:550px;
-  margin:0 auto;
-  text-align:left;
+ul {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: left;
 }
-li{
+li {
   margin: 10px;
 }
-#img-caption{
-  margin:15px;
+#img-caption {
+  margin: 15px;
   text-align: center;
 }
-#headline{
-  margin-top:50px;
-  text-align:left;
+#headline {
+  margin-top: 50px;
+  text-align: left;
 }

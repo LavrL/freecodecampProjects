@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400);
 
-html, 
+html,
 body {
   background-color: lightgreen;
   text-align: center;
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
 }
 .labels {
   display: inline-block;
@@ -12,7 +12,13 @@ body {
   width: 40%;
   padding: 5px;
   vertical-align: top;
-  margin-top: 5px;
+}
+.labels2 {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: middle;
 }
 .tab1 {
   display: inline-block;
@@ -20,6 +26,14 @@ body {
   width: 48%;
   vertical-align: middle;
 }
+
+.tab2 {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
 .input-field {
   width: 280px;
   height: 20px;
@@ -29,21 +43,29 @@ body {
   margin-top: 15px;
 }
 
-.radio, .checkbox {
+.radio,
+.checkbox {
   display: block;
   position: relative;
   left: -40px;
 }
 
-.user-rating, input[type="checkbox"] {
+.user-rating,
+input[type="checkbox"] {
   float: left;
   margin-right: 5px;
 }
-.mainForm{
+.mainForm {
   background-color: white;
   margin: 0 auto;
   width: 50%;
   padding: 30px;
   margin-bottom: 15px;
   border-bottom: 50px;
+}
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
 }

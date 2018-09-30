@@ -1,70 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>FreeCodeCamp: Survey Form</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <h1>Survey Form</h1>
   <div class="mainForm">
 
     <p>Let us know how we can improve FreeCodeCamp</p>
     <div>
-
-      <div class="labels">
-        <label id="label" for="name">* Name: </label> 
-      </div>
-      <div class="tab1">
-        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
-      </div>
-
-      <div class="labels">
-        <label id="label" for="email">* Email: </label> 
-      </div>
-      <div class="tab1">
-          <input autofocus type="text" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="label" for="name">* Name: </label>
+        </div>
+        <div class="tab1">
+          <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+        </div>
       </div>
 
-      <div class="labels">
-        <label id="label" for="age">* Age: </label> 
-      </div>
-      <div class="tab1">
-        <input autofocus type="number" name="age" id="number" min=1 max="100" class="input-field" placeholder="Enter your age" required>
-      </div>
-
-      <div class="labels">
-        <label id="label" for="age">What option best describes your role: </label> 
-      </div>
-      <div class="tab1">
-        <select id="dropdown" name="currentPos" class="down">
-          <option disabled value>Select value</option>
-          <option>Student</option>
-          <option>Full time learner</option>
-          <option>Part time learner</option>
-          <option>Prefer not to say</option>
-        </select>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="label" for="email">* Email: </label>
+        </div>
+        <div class="tab1">
+          <input autofocus type="text" name="email" id="email" class="input-field" placeholder="Enter your email"
+            required>
+        </div>
       </div>
 
-      <div class="labels">
-          <label>Will you finish FreeCodeCamp: </label> 
+      <div class="rowTab">
+        <div class="labels">
+          <label id="label" for="age">* Age: </label>
+        </div>
+        <div class="tab1">
+          <input autofocus type="number" name="age" id="number" min=1 max="100" class="input-field" placeholder="Enter your age"
+            required>
+        </div>
       </div>
-      <div class="tab1">
-        <ul >
-          <li class="radio">
-            <label>Yes<input name="radio-buttons" type="radio" value="1" class="user-rating"></label>
-          </li>
-          <li class="radio">
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="label" for="age">What option best describes your role: </label>
+        </div>
+        <div class="tab1">
+          <select id="dropdown" name="currentPos" class="down">
+            <option disabled value>Select value</option>
+            <option>Student</option>
+            <option>Full time learner</option>
+            <option>Part time learner</option>
+            <option>Prefer not to say</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels2">
+          <label>Will you finish FreeCodeCamp: </label>
+        </div>
+        <div class="tab2">
+          <ul>
+            <li class="radio">
+              <label>Yes<input name="radio-buttons" type="radio" value="1" class="user-rating"></label>
+            </li>
+            <li class="radio">
               <label>No<input name="radio-buttons" type="radio" value="2" class="user-rating"></label>
-          </li>
-          <li class="radio">
+            </li>
+            <li class="radio">
               <label>Do not know<input name="radio-buttons" type="radio" value="3" class="user-rating"></label>
-          </li>
-        </ul>  
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="labels">
-          <label id="label" for="preferences">Things that will be improved: </label> 
+      <div class="labels2">
+        <label id="label" for="preferences">Things that will be improved: </label>
       </div>
       <div class="tab1">
         <ul style="list-style:none">
@@ -83,7 +96,7 @@
         </ul>
       </div>
 
-      <div class="labels">
+      <div class="labels2">
         <label for="label" for="comments">Any comments</label>
       </div>
       <div class="tab1">
@@ -97,4 +110,5 @@
     </div>
   </div>
 </body>
+
 </html>
